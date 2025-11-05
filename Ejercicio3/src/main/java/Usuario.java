@@ -27,26 +27,4 @@ public class Usuario {
         return this.password;
     }
 
-    public boolean autenticarUsuario(String email, String password) {
-        if (this.email.equals(email) && this.password.equals(password)) {
-            System.out.println("Usuario autenticado correctamente");
-            return true;
-        } else {
-            System.out.println("Usuario incorrecto");
-            return false;
-        }
-    }
-
-    public boolean validacionUsuario() {
-
-        if (!nombre.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-            System.out.println("Usuario valido");
-            return true;
-        } else {
-            System.out.println("Usuario invalido");
-            return false;
-        }
-
-    }
-
 }
