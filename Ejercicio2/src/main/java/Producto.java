@@ -28,19 +28,4 @@ public class Producto {
     }
 
 
-    public double totalPagar(double precio, int cantidad) {
-        double total = precio * cantidad;
-        return total;
-    }
-
-    public void generarRecibo(Producto producto) {
-        System.out.println("Producto: " + producto.getNombre());
-        System.out.println("Cantidad: " + producto.getCantidad());
-        System.out.println("Total a pagar: " + totalPagar(producto.getPrecio(), producto.getCantidad()));
-    }
-
-    public void imprimirRecibo() {
-        System.out.println("Imprimiento recibo...");
-    }
-
 }
